@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drive API Example</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <p class="api-message"></p>
+
+      <!--Add buttons to initiate auth sequence and sign out-->
+      <div class="top-buttons">
+        <button
+          id="authorize_button"
+          class="button is-light is-rounded"
+          style="display: none;"
+        >
+          Authorize
+        </button>
+        <button
+          id="signout_button"
+          class="button is-light"
+          style="display: none;"
+        >
+          Sign Out
+        </button>
+      </div>
+
+      <div class="drive-items"></div>
+
+      <script src="/script.js"></script>
+      <script
+        async
+        defer
+        src="https://apis.google.com/js/api.js"
+        onload="this.onload=function(){};FileViewer.Init()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()"
+      ></script>
+    </div>
+  </body>
+</html>
