@@ -2,7 +2,6 @@ var FileViewer = (function() {
   // Client ID and API key from the Developer Console
   var CLIENT_ID =
     '516850741751-retdr8ln2dlpmsk5jvmuhphpsmr3o9ti.apps.googleusercontent.com';
-  var API_KEY = 'AIzaSyDmuTqDgF7Pn_j5nOi-26rz6LOJr1yZDiA';
 
   // Array of API discovery doc URLs for APIs used by the quickstart
   var DISCOVERY_DOCS = [
@@ -92,7 +91,6 @@ var FileViewer = (function() {
   function initClient() {
     gapi.client
       .init({
-        apiKey: API_KEY,
         clientId: CLIENT_ID,
         discoveryDocs: DISCOVERY_DOCS,
         scope: SCOPES
